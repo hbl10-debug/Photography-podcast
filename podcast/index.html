@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Photography Podcast</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(180deg, #0a192f, #020c1b);
+      color: #ccd6f6;
+    }
+    header {
+      background: #0e67ed;
+      padding: 30px;
+      text-align: center;
+      border-bottom: 2px solid #1e90ff;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.8em;
+      color: #64ffda;
+    }
+    header p {
+      color: #8892b0;
+    }
+    nav {
+      background: #548bde;
+      padding: 12px;
+      text-align: center;
+    }
+    nav a {
+      color: #ccd6f6;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #64ffda;
+    }
+    .hero {
+      background: url('https://via.placeholder.com/1200x500/0a192f/ffffff') no-repeat center/cover;
+      height: 420px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(6, 61, 145, 0.7);
+    }
+    .hero h2 {
+      position: relative;
+      background: rgba(2,12,27,0.8);
+      padding: 25px;
+      border-radius: 12px;
+      color: #64ffda;
+    }
+    .container {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .episodes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .episode {
+      background: #3f5a89;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .episode:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 25px rgba(0,0,0,0.7);
+    }
+    .episode h3 {
+      color: #64ffda;
+    }
+    audio {
+      width: 100%;
+      margin-top: 10px;
+    }
+    footer {
+      background: #020c1b;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #8892b0;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>My Photography Podcast</h1>
+  <p>Stories, tips, and inspiration from behind the lens</p>
+</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#episodes">Episodes</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+  <h2>Capturing Moments. Sharing Stories.</h2>
+</section>
+
+<div class="container" id="episodes">
+  <h2>Latest Episodes</h2>
+
+  <div class="episodes-grid">
+
+    <div class="episode">
+      <h3>Episode 1: Basic Rules and Theories</h3>
+      <p>Learn the basics of photography and how to begin your journey.</p>
+      <audio controls>
+        <source src="episode1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+
+</div>
+
+<div class="container" id="about">
+  <h2>About the Podcast</h2>
+  <p>This podcast dives into the art and business of photography. From gear reviews to storytelling techniques, we explore everything you need to elevate your craft.</p>
+</div>
+
+<div class="container" id="contact">
+  <h2>Contact</h2>
+  <p>Email: hbl10@pitt.edu </p>
+  <p>Follow on social media for updates!</p>
+</div>
+
+<footer>
+  <p>&copy; 2026 My Photography Podcast</p>
+</footer>
+
+</body>
+</html>
